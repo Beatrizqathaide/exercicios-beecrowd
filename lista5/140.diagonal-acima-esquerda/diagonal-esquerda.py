@@ -1,5 +1,5 @@
 '''
-Lê um caractere maiúsculo que indica uma operação que será realizada em um array M [12][12]. Em seguida, calcule e imprima a soma ou média considerando apenas os números que estão acima da diagonal principal do array, conforme a figura a seguir (área verde).
+Lê um caractere maiúsculo que indica uma operação que será realizada em um array M [12][12]. Em seguida, calcule e imprima a soma ou média considerando apenas os números que estão acima da diagonal secundária do array, conforme mostra a figura a seguir (área verde).
 
 Entrada
 A primeira linha da entrada contém um único caractere maiúsculo O ('S' ou 'M'), indicando a operação Soma ou Média (Média em português) a ser realizada com os elementos do array. Siga 144 números de ponto flutuante da matriz.
@@ -20,10 +20,9 @@ for l in range(0, 12):
     
 soma = 0
 
-for l in range(0, 12):
-    for c in range(0, 12):
-        if c < l:
-            soma += matriz[l][c]
+for l in range(0, 11):
+    for c in range(0, 11 - l): #diminui a quantidade de elementos da linha de acordo com o index da linha
+        soma += matriz[l][c]
 
 media = soma / 66
 
