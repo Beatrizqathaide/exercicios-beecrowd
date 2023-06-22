@@ -1,5 +1,5 @@
 '''
-Lê um caractere maiúsculo que indica uma operação que será realizada em um array M [12][12]. Em seguida, calcule e imprima a soma ou média considerando apenas os números que estão acima da diagonal principal do array, conforme a figura a seguir (área verde).
+Lê um caractere maiúsculo que indica uma operação que será realizada em um array M [12][12]. Em seguida, calcule e imprima a soma ou média considerando apenas os números que estão abaixo da diagonal principal do array, conforme a figura a seguir (área verde).
 
 Entrada
 A primeira linha da entrada contém um único caractere maiúsculo O ('S' ou 'M'), indicando a operação Soma ou Média (Média em português) a ser realizada com os elementos do array. Siga 144 números de ponto flutuante da matriz.
