@@ -27,28 +27,30 @@ A saída será impressa como mostrado acima.
 
 
 
-x = 'x = 35'
+a = 'Roberto'
+b = '5786'
+c = 'UNIFEI'
 t = '|'
 
 for cont in range(0, 7):
 
     if cont == 0 or cont == 6:
-        for c in range(0, 39):
+        for i in range(0, 39):
 
-            if c < 38:
+            if i < 38:
                 print('-', end='')
 
-            elif c == 38:
+            elif i == 38:
                 print('-')
 
     if cont == 1:
-        print(f'{t:<1}{x:^2}{t:>32}')
+        print(f'{t:>1}{a:^24}{t:>14}')
 
     elif cont == 3:
-        print(f'{t:>1}{x:^36}{t:>2}')
+        print(f'{t:>1}{b:^21}{t:>17}')
 
     elif cont == 5:
-        print(f'{t:>1}{x:>37}{t:>1}')
+        print(f'{t:>1}{c:^23}{t:>15}')
 
     elif cont == 2 or cont == 4:
         print(f'{t:<1}{t:>38}')
