@@ -1,22 +1,19 @@
+a = 'Dona Ana é bem velhinha'
 
-'''
-for c in range(0, len(a)):
-    if a[c] == 'a':
-        a[c] = 'd'
+lista = []
 
-for l in range(0, len(a)):
-    if l < len(a) - 1:
-        print(a[l], end='')
-    if l == len(a) - 1:
-        print(a[l])
+#transforma a string em lista
+for i in range(0, len(a)):
+    lista.append(a[i])
 
-'''
-a = [1, 2, 3, 4]
+#localiza o elemento a ser trocado e faz a troca
+for c in range(0, len(lista)):
+    if lista[c] == 'a':
+        lista[c] = '*'
 
-
-
-
-for c in range(0, len(a)):
-    if c == (2):
-        print(a[c])
-
+#faz o print com a troca do elemento
+for l in range(0, len(lista)):
+    if l < len(lista) - 1:
+        print(lista[l], end='')
+    if l == len(lista) - 1:
+        print(lista[l])
