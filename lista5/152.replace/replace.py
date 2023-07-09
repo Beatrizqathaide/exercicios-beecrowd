@@ -1,4 +1,4 @@
-a = 'Dona Ana é bem velhinha'
+string = 'Dona Ana é bem velhinha'
 
 def meuReplace(string, troca, substituto):
     lista = []
@@ -11,7 +11,6 @@ def meuReplace(string, troca, substituto):
     for c in range(0, len(lista)):
         if lista[c] == troca:
             lista[c] = substituto
-
     
     #faz o print com a troca do elemento
     for l in range(0, len(lista)):
@@ -20,4 +19,6 @@ def meuReplace(string, troca, substituto):
         if l == len(lista) - 1:
             print(lista[l])
 
-print(meuReplace(a, 'a', '*'))
+
+print(meuReplace(string, 'a', '*'))
+
